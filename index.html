@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Vaccination Landing Page</title>
+</head>
+
+<body>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        #page-content {
+            flex: 1 0 auto;
+        }
+
+        /* Other Classes for Page Styling */
+
+        /* body {
+            background: #fcfdfd;
+            background: linear-gradient(to right, #a4a5a7, #fcfdfd);
+        } */
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        @font-face {
+            font-family: normalFont;
+            src: url(/assets/fonts/mplus-1c-regular.ttf);
+        }
+
+        .bg-footer {
+            background-color: #eef3ff;
+        }
+
+        .bg-vaccination-font {
+            color: #3c5ad0;
+        }
+
+        .dark-blue-font {
+            color: #1f3e72;
+        }
+
+        .gradient-header {
+            background: #ffffff;
+            background: linear-gradient(to right, #ffffff, #e7f3fc, #e9f1fc);
+        }
+
+        .arrow-up {
+            width: 0;
+            height: 0;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+
+            border-bottom: 90px solid #e2e9f9;
+        }
+
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+
+            border-top: 60px solid #f4f6fb;
+        }
+
+        .arrow-right {
+            width: 0;
+            height: 0;
+            border-top: 80px solid transparent;
+            border-bottom: 80px solid transparent;
+
+            border-left: 80px solid #f4f6fb;
+        }
+
+        .arrow-left {
+            width: 0;
+            height: 0;
+            border-top: 80px solid transparent;
+            border-bottom: 80px solid transparent;
+
+            border-right: 80px solid #f4f6fb;
+        }
+
+        .preparations-icon {
+            background-color: #eef2ff;
+            color: #2a4ac8;
+            font-size: larger;
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+
+    <nav class="navbar navbar-light gradient-header">
+        <a class="navbar-brand ml-5 mr-5" href="./index.html">
+            <h3>
+                <div class="mb-2 bg-vaccination-font">
+                    <strong>Vaccination</strong>
+                </div>
+            </h3>
+        </a>
+        <form class="form-inline text-muted">
+            <a class="nav-link mr-4 text-muted" href="#"><small><strong>Database</strong></small></a>
+            <a class="nav-link mr-4 text-muted" href="#"><small><strong>Education</strong></small> </a>
+            <a class="nav-link mr-4 text-muted" href="#"><small><strong>News</strong></small></a>
+            <a class="nav-link mr-4 text-muted" href="#"><small><strong>Regulations</strong></small></a>
+            <button class=" shadow-sm btn btn-sm btn-primary shadow-lg" style="width: 140px;">Hoax Buster</button>
+        </form>
+    </nav>
+
+    <div class="row ml-3">
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="row ml-5">
+        <div class="col-6">
+            <h1 class="dark-blue-font"><strong>Fight Virus<br>With Vaccines</strong> </h1>
+            <p class="text-muted mt-4">
+                <strong>
+                    Let's stop this pandemic by killing the virus<br>
+                    with a vaccine, don't let yourself and your<br>
+                    family get infected.
+                </strong>
+
+            </p>
+            <p>
+            <div class="row mt-4 dark-blue-font">
+                <div class="col-5 dark-blue-font mt-5">
+                    <span class="fa fa-medkit text-warning"></span> <small><strong> Best Protection</strong></small>
+                </div>
+                <div class="col-5 dark-blue-font mt-5">
+                    <span class="fa fa-star text-warning"></span> <small class="dark-blue-font "><strong> Selected
+                            Vaccines</strong></small>
+                </div>
+                <div class="col-2">
+                    <div class="arrow-left"></div>
+                </div>
+            </div>
+            </p>
+        </div>
+        <div class="col-6">
+            <img src="./assets/img/1.jpg">
+            <!-- <img src="assets/img/2.jpg" alt="Girl in a jacket" width="500" height="600"> -->
+
+        </div>
+    </div>
+
+    <div class="row ml-5">
+        <div class="col-5 dark-blue-font ">
+            <span class="fa fa-book " style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span><strong> Schedule your vaccinations</strong>
+        </div>
+
+    </div>
+
+
+    <div class="position-relative  p-5  shadow-lg bg-white rounded" style="top:30px; left:105px; width: 800px;">
+        <div class="row">
+            <div class="col-3 dark-blue-font ">
+                <span class="fa fa-location-arrow" style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span> <span>Location</span><br>
+                <span class="ml-3" style="font-weight: bold;">Jakarta Utara</span>
+            </div>
+            <div class="col-3 dark-blue-font ">
+                <span class="fa fa-calendar " style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span> <span>Date</span><br>
+                <span class="ml-3" style="font-weight: bold;">08 July 2021</span>
+            </div>
+            <div class="col-3 dark-blue-font ">
+                <span class="fa fa-edit " style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span> <span>Vaccine Type</span><br>
+                <span class="ml-3" style="font-weight: bold;">Moderna</span>
+            </div>
+            <div class="col-3 dark-blue-font ">
+                <button class=" shadow-sm btn btn-sm btn-primary shadow-lg"
+                    style="width: 140px;height: 50px;">Submit</button>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="row">
+        <div class="col-12 text-center justify-content-center">
+            <img src="./assets/img/vaccines_brand.PNG">
+
+        </div>
+    </div>
+
+    <div class="row ml-5">
+        <div class="col-10">
+            <h2 class="dark-blue-font"><strong>Why should I vaccine?</strong></h2>
+            <br>
+            <p class="text-muted">
+                In order to avoid any doubts about getting the COVID-19<br>
+                vaccine, identify the following 4 benefits of COVID-19 <br>
+                vaccination:
+            </p>
+        </div>
+
+        <div class="col-2">
+            <div class="arrow-left"></div>
+
+        </div>
+    </div>
+
+    <div class="row ml-5 mt-4">
+        <div class="col-3">
+
+            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
+                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                    <span class="fa fa-stethoscope"
+                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                </button>
+                    <br><br>
+                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;"> Minimize the <br> spread of
+                    viruses</h5>
+
+                <p class="text-muted" style="font-size: smaller;">
+                    <small>
+                        Vaccine has been proven<br>effective to prevent someone<br>from getting infected
+                        with<br>Coronavirus
+                    </small>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
+                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                    <span class="fa fa-heartbeat"
+                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                </button><br><br>
+                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;">Forming<br>antibodies</h5>
+                <p class="text-muted" style="font-size: smaller;">
+                    <small>
+                        COVID-19 vaccine proven to<br>help shape antibody<br>response for inmmune system
+                    </small>
+                </p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
+                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                    <span class="fa fa-users"
+                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                </button><br><br>
+                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;">Protecting<br> people nearby
+                </h5>
+                <p class="text-muted" style="font-size: smaller;">
+                    <small>
+                        The benefits of COVID-19<br>vaccination are the vaccine<br>that we get can also help<br>protect
+                        people around us
+                    </small>
+                </p>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
+                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                    <span class="fa fa-trophy"
+                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                </button><br><br>
+                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;">Creating group <br>immunity</h5>
+                <p class="text-muted" style="font-size: smaller;">
+                    <small>
+                        COVID-19 vaccination is also<br>beneficial for creating group<br>immunity or herd immunity
+                    </small>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ml-5">
+        <div class="col-5">
+            <div class="arrow-right"></div>
+
+        </div>
+        <div class="col-5">
+            <h2 class="dark-blue-font"><strong>Preparations Before Vaccine</strong></h2>
+            <br>
+            <p class="text-muted" style="font-size: medium; ">
+                The success in vaccines is strongly influenced by the<br>
+                strength of the body's immune system. Therefore, there are <br>
+                several things that can be tried to make the COVID-19 <br>
+                vaccine work:
+            </p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-6">
+            <img src="./assets/img/3.jpeg" width="90%">
+            <!-- <img src="assets/img/2.jpg" alt="Girl in a jacket" width="500" height="600"> -->
+
+        </div>
+        <div class="col-6">
+            <p>
+            <div class="row mt-3 dark-blue-font">
+                <div class="col-6 dark-blue-font">
+                    <span
+                        class="	fa fa-thumbs-down mr-2 align-middle justify-content-center text-center align-middle shadow preparations-icon"></span>
+                    <small><strong> Avoid alcoholic beverages</strong></small>
+                </div>
+                <div class="col-2">
+                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            <br>
+            <div class="row mt-3 dark-blue-font">
+                <div class="col-6 dark-blue-font ">
+                    <span
+                        class="	fa fa-heartbeat mr-2 align-middle justify-content-center text-center align-middle shadow preparations-icon"></span>
+                    <small><strong> Avoid stress</strong></small>
+                </div>
+                <div class="col-2">
+                    <span class="	fa fa-toggle-up" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            <div class="row  ">
+                <div class="col-6 shadow ml-4 mt-3">
+                    <div class="mx-auto" style="width: 200px;">
+
+                    </div>
+                    <p class="text-muted pt-3" style="font-size: smaller;">
+
+                        Stress has a profound effect on immune work.<br>
+                        Moreover, prolonged stress can increase cortisol<br>
+                        production and oxidative stress in the body.
+
+                    </p>
+                </div>
+                <div class="col-2">
+
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            <br>
+            <div class="row mt-3 dark-blue-font">
+                <div class="col-6 dark-blue-font ">
+                    <span
+                        class="	fa fa-cutlery mr-2 align-middle justify-content-center text-center align-middle shadow preparations-icon"></span>
+                    <small><strong> Eat healty food</strong></small>
+                </div>
+                <div class="col-2">
+                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            <br>
+            <div class="row mt-3 dark-blue-font">
+                <div class="col-6 dark-blue-font ">
+                    <span
+                        class="	fa fa-hotel mr-2 align-middle justify-content-center text-center align-middle shadow preparations-icon"></span>
+                    <small><strong> Get enough sleep</strong></small>
+                </div>
+                <div class="col-2">
+                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            <br>
+            <div class="row mt-3 dark-blue-font">
+                <div class="col-6 dark-blue-font ">
+                    <span
+                        class="	fa fa-bicycle mr-2 align-middle justify-content-center text-center align-middle shadow preparations-icon"></span>
+                    <small><strong> Exercise or physical activity</strong></small>
+                </div>
+                <div class="col-2">
+                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+            </p>
+        </div>
+
+    </div>
+
+    <br><br><br>
+    <div class="row ml-5">
+        <div class="col-10">
+            <h2 class="dark-blue-font"><strong>Emergency Contact</strong></h2>
+            <br>
+            <p class="text-muted">
+                Contact one of the contacts below if you or your family feel<br>
+                unwell and have similar symptoms such as COVID-19, make<br>
+                sure you also take care of yourself before reporting to us:
+            </p>
+        </div>
+
+        <div class="col-2">
+            <div class="arrow-left"></div>
+
+        </div>
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-6">
+            <div class="row justify-content-center">
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;">
+                                <span class="fa fa-volume-control-phone"
+                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            </button>
+                        </div>
+                        <div class="col-8">
+                            <strong class="dark-blue-font">Call</strong>
+                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <button class="btn rounded shadow-sm"
+                            style="width: 170px;height: 50px;background-color: #eef2ff; color: #2a4ac8; font-weight: bold;font-size: small;">
+                            Call Now
+                        </button>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                                <span class="fa fa-keyboard-o"
+                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            </button>
+                        </div>
+                        <div class="col-8">
+                            <strong class="dark-blue-font">Chat</strong>
+                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <button class="btn rounded shadow-sm"
+                            style="width: 170px;height: 50px;background-color: #2a4ac8 ; color: #eef2ff; font-weight: bold;font-size: small;">
+                            Chat Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                                <span class="fa fa-video-camera"
+                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            </button>
+                        </div>
+                        <div class="col-8">
+                            <strong class="dark-blue-font">Video Call</strong>
+                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <button class="btn rounded shadow-sm"
+                            style="width: 170px;height: 50px;background-color: #eef2ff; color: #2a4ac8; font-weight: bold;font-size: small;">
+                            Video Call Now
+                        </button>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                    <div class="row">
+                        <div class="col-4 ">
+                            <button class="btn rounded justify-content-center" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
+                                <span class="fa fa-envelope"
+                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            </button>
+                        </div>
+                        <div class="col-8">
+                            <strong class="dark-blue-font">Message</strong>
+                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <button class="btn rounded shadow-sm "
+                            style="width: 170px;height: 50px;background-color: #eef2ff;color: #2a4ac8; font-weight: bold;font-size: small;">
+                            Message Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-6">
+            <img src="./assets/img/4.jpg" width="90%">
+            <!-- <img src="assets/img/2.jpg" alt="Girl in a jacket" width="500" height="600"> -->
+
+        </div>
+    </div>
+
+    <br><br><br><br>
+
+
+    <footer id="sticky-footer" class="flex-shrink-2 py-5 bg-footer">
+        <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5 ml-4">
+                <h3>
+                    <div class="mb-2 bg-vaccination-font">
+                        <strong>Vaccination</strong>
+                    </div>
+                </h3>
+
+
+
+                <p class="text-small">
+                    <small>
+                        Our goal is to help the <br>
+                        world free from the <br>
+                        ongoing pandemic.
+                    </small>
+
+                </p>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <strong>About</strong>
+                        </div>
+                        <div class="mb-2">
+                            <small>About Us</small>
+                        </div>
+                        <div class="mb-2">
+                            <small>Features</small>
+                        </div>
+                        <div class="mb-2">
+                            <small>News & Blog</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <strong>Company</strong>
+                        </div>
+                        <div class="mb-2">
+                            <small>How We Work?</small>
+                        </div>
+                        <div class="mb-2">
+                            <small>Capital</small>
+                        </div>
+                        <div class="mb-2">
+                            <small>Security</small>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-2">
+                            <strong>Support</strong>
+                        </div>
+                        <div class="mb-2">
+                            <small>FAQs</small>
+                        </div>
+                        <div class="mb-2">
+                            <small>Support Center</small>
+                        </div>
+                        <div class="mb-2">
+                            <small>Contact Us</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5 ml-4">
+
+                <p class="text-sm">
+                    <small>&copy;2021 Vaccination. All rights reserved.</small>
+                </p>
+            </div>
+            <div class="col-5 text-sm">
+                <div class="container text-center">
+                    <small>Terms & Agreements Privacy Policy</small>
+                    
+                </div>
+                <div class="arrow-up"></div>
+
+            </div>
+            <div class="col-1">
+                
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
