@@ -15,92 +15,7 @@
 </head>
 
 <body>
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        #page-content {
-            flex: 1 0 auto;
-        }
-
-        /* Other Classes for Page Styling */
-
-        /* body {
-            background: #fcfdfd;
-            background: linear-gradient(to right, #a4a5a7, #fcfdfd);
-        } */
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif
-        }
-
-        @font-face {
-            font-family: normalFont;
-            src: url(/assets/fonts/mplus-1c-regular.ttf);
-        }
-
-        .bg-footer {
-            background-color: #eef3ff;
-        }
-
-        .bg-vaccination-font {
-            color: #3c5ad0;
-        }
-
-        .dark-blue-font {
-            color: #1f3e72;
-        }
-
-        .gradient-header {
-            background: #ffffff;
-            background: linear-gradient(to right, #ffffff, #e7f3fc, #e9f1fc);
-        }
-
-        .arrow-up {
-            width: 0;
-            height: 0;
-            border-left: 90px solid transparent;
-            border-right: 90px solid transparent;
-
-            border-bottom: 90px solid #e2e9f9;
-        }
-
-        .arrow-down {
-            width: 0;
-            height: 0;
-            border-left: 60px solid transparent;
-            border-right: 60px solid transparent;
-
-            border-top: 60px solid #f4f6fb;
-        }
-
-        .arrow-right {
-            width: 0;
-            height: 0;
-            border-top: 80px solid transparent;
-            border-bottom: 80px solid transparent;
-
-            border-left: 80px solid #f4f6fb;
-        }
-
-        .arrow-left {
-            width: 0;
-            height: 0;
-            border-top: 80px solid transparent;
-            border-bottom: 80px solid transparent;
-
-            border-right: 80px solid #f4f6fb;
-        }
-
-        .preparations-icon {
-            background-color: #eef2ff;
-            color: #2a4ac8;
-            font-size: larger;
-            width: 25px;
-            height: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/styles/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -166,25 +81,25 @@
 
     <div class="row ml-5">
         <div class="col-5 dark-blue-font ">
-            <span class="fa fa-book " style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span><strong> Schedule your vaccinations</strong>
+            <span class="fa fa-book icon-schedule"></span><strong> Schedule your vaccinations</strong>
         </div>
 
     </div>
 
 
-    <div class="position-relative  p-5  shadow-lg bg-white rounded" style="top:30px; left:105px; width: 800px;">
+    <div class="position-relative  p-5  shadow-lg bg-white rounded div-schedule">
         <div class="row">
             <div class="col-3 dark-blue-font ">
-                <span class="fa fa-location-arrow" style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span> <span>Location</span><br>
-                <span class="ml-3" style="font-weight: bold;">Jakarta Utara</span>
+                <span class="fa fa-location-arrow icon-schedule"></span> <span>Location</span><br>
+                <span class="ml-3 font-weight-bold">Jakarta Utara</span>
             </div>
             <div class="col-3 dark-blue-font ">
-                <span class="fa fa-calendar " style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span> <span>Date</span><br>
-                <span class="ml-3" style="font-weight: bold;">08 July 2021</span>
+                <span class="fa fa-calendar icon-schedule"></span> <span>Date</span><br>
+                <span class="ml-3 font-weight-bold">08 July 2021</span>
             </div>
             <div class="col-3 dark-blue-font ">
-                <span class="fa fa-edit " style="background-color: #eef2ff;color: #2a4ac8; font-size: large;"></span> <span>Vaccine Type</span><br>
-                <span class="ml-3" style="font-weight: bold;">Moderna</span>
+                <span class="fa fa-edit icon-schedule"></span> <span>Vaccine Type</span><br>
+                <span class="ml-3 font-weight-bold">Moderna</span>
             </div>
             <div class="col-3 dark-blue-font ">
                 <button class=" shadow-sm btn btn-sm btn-primary shadow-lg"
@@ -222,16 +137,15 @@
     <div class="row ml-5 mt-4">
         <div class="col-3">
 
-            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
-                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                    <span class="fa fa-stethoscope"
-                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+            <div class="shadow p-3 mb-5 bg-white rounded div-vaccine">
+                <button class="btn rounded btn-class-1">
+                    <span class="fa fa-stethoscope icon-class-1"></span>
                 </button>
-                    <br><br>
-                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;"> Minimize the <br> spread of
+                <br><br>
+                <h5 class="dark-blue-font font-medium-bold"> Minimize the <br> spread of
                     viruses</h5>
 
-                <p class="text-muted" style="font-size: smaller;">
+                <p class="text-muted font-smaller" s>
                     <small>
                         Vaccine has been proven<br>effective to prevent someone<br>from getting infected
                         with<br>Coronavirus
@@ -241,13 +155,12 @@
         </div>
 
         <div class="col-3">
-            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
-                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                    <span class="fa fa-heartbeat"
-                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+            <div class="shadow p-3 mb-5 bg-white rounded div-vaccine">
+                <button class="btn rounded btn-class-1">
+                    <span class="fa fa-heartbeat icon-class-1"></span>
                 </button><br><br>
-                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;">Forming<br>antibodies</h5>
-                <p class="text-muted" style="font-size: smaller;">
+                <h5 class="dark-blue-font font-medium-bold">Forming<br>antibodies</h5>
+                <p class="text-muted font-smaller">
                     <small>
                         COVID-19 vaccine proven to<br>help shape antibody<br>response for inmmune system
                     </small>
@@ -255,14 +168,13 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
-                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                    <span class="fa fa-users"
-                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+            <div class="shadow p-3 mb-5 bg-white rounded div-vaccine">
+                <button class="btn rounded btn-class-1">
+                    <span class="fa fa-users icon-class-1"></span>
                 </button><br><br>
-                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;">Protecting<br> people nearby
+                <h5 class="dark-blue-font font-medium-bold">Protecting<br> people nearby
                 </h5>
-                <p class="text-muted" style="font-size: smaller;">
+                <p class="text-muted font-smaller">
                     <small>
                         The benefits of COVID-19<br>vaccination are the vaccine<br>that we get can also help<br>protect
                         people around us
@@ -271,13 +183,12 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="shadow p-3 mb-5 bg-white rounded" style="height: 250px; width: 200px;">
-                <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                    <span class="fa fa-trophy"
-                        style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+            <div class="shadow p-3 mb-5 bg-white rounded div-vaccine">
+                <button class="btn rounded btn-class-1">
+                    <span class="fa fa-trophy icon-class-1"></span>
                 </button><br><br>
-                <h5 class="dark-blue-font" style="font-size: medium;font-weight: bold;">Creating group <br>immunity</h5>
-                <p class="text-muted" style="font-size: smaller;">
+                <h5 class="dark-blue-font font-medium-bold">Creating group <br>immunity</h5>
+                <p class="text-muted font-smaller">
                     <small>
                         COVID-19 vaccination is also<br>beneficial for creating group<br>immunity or herd immunity
                     </small>
@@ -318,7 +229,7 @@
                     <small><strong> Avoid alcoholic beverages</strong></small>
                 </div>
                 <div class="col-2">
-                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                    <span class="	fa fa-toggle-down icon-blue"></span>
                 </div>
                 <div class="col-4">
 
@@ -332,7 +243,7 @@
                     <small><strong> Avoid stress</strong></small>
                 </div>
                 <div class="col-2">
-                    <span class="	fa fa-toggle-up" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                    <span class="	fa fa-toggle-up icon-blue"></span>
                 </div>
                 <div class="col-4">
 
@@ -343,7 +254,7 @@
                     <div class="mx-auto" style="width: 200px;">
 
                     </div>
-                    <p class="text-muted pt-3" style="font-size: smaller;">
+                    <p class="text-muted pt-3 font-smaller">
 
                         Stress has a profound effect on immune work.<br>
                         Moreover, prolonged stress can increase cortisol<br>
@@ -366,7 +277,7 @@
                     <small><strong> Eat healty food</strong></small>
                 </div>
                 <div class="col-2">
-                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                    <span class="	fa fa-toggle-down icon-blue"></span>
                 </div>
                 <div class="col-4">
 
@@ -380,7 +291,7 @@
                     <small><strong> Get enough sleep</strong></small>
                 </div>
                 <div class="col-2">
-                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                    <span class="	fa fa-toggle-down icon-blue"></span>
                 </div>
                 <div class="col-4">
 
@@ -394,7 +305,7 @@
                     <small><strong> Exercise or physical activity</strong></small>
                 </div>
                 <div class="col-2">
-                    <span class="	fa fa-toggle-down" style="background-color: #eef2ff;color: #2a4ac8;"></span>
+                    <span class="	fa fa-toggle-down icon-blue"></span>
                 </div>
                 <div class="col-4">
 
@@ -427,42 +338,39 @@
 
         <div class="col-6">
             <div class="row justify-content-center">
-                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5 div-contact">
                     <div class="row">
                         <div class="col-4 ">
                             <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;">
-                                <span class="fa fa-volume-control-phone"
-                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                                <span class="fa fa-volume-control-phone icon-class-1"></span>
                             </button>
                         </div>
                         <div class="col-8">
                             <strong class="dark-blue-font">Call</strong>
-                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                            <p class="text-muted font-xsmall-bold">021.123.145.14 </p>
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <button class="btn rounded shadow-sm"
-                            style="width: 170px;height: 50px;background-color: #eef2ff; color: #2a4ac8; font-weight: bold;font-size: small;">
+                        <button class="btn rounded shadow-sm btn-contact-1">
                             Call Now
                         </button>
                     </div>
                 </div>
-                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5 div-contact">
                     <div class="row">
                         <div class="col-4 ">
-                            <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                                <span class="fa fa-keyboard-o"
-                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            <button class="btn rounded btn-class-1">
+                                <span class="fa fa-keyboard-o icon-class-1"></span>
                             </button>
                         </div>
                         <div class="col-8">
                             <strong class="dark-blue-font">Chat</strong>
-                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                            <p class="text-muted font-xsmall-bold">021.123.145.14 </p>
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <button class="btn rounded shadow-sm"
-                            style="width: 170px;height: 50px;background-color: #2a4ac8 ; color: #eef2ff; font-weight: bold;font-size: small;">
+                        <button class="btn rounded shadow-sm font-small-bold icon-blue-selected"
+                            style="width: 170px;height: 50px; ">
                             Chat Now
                         </button>
                     </div>
@@ -471,42 +379,39 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5 div-contact">
                     <div class="row">
                         <div class="col-4 ">
-                            <button class="btn rounded" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                                <span class="fa fa-video-camera"
-                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            <button class="btn rounded btn-class-1">
+                                <span class="fa fa-video-camera icon-class-1"></span>
                             </button>
                         </div>
                         <div class="col-8">
                             <strong class="dark-blue-font">Video Call</strong>
-                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                            <p class="text-muted font-xsmall-bold">021.123.145.14 </p>
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <button class="btn rounded shadow-sm"
-                            style="width: 170px;height: 50px;background-color: #eef2ff; color: #2a4ac8; font-weight: bold;font-size: small;">
+                        <button class="btn rounded shadow-sm btn-contact-1">
                             Video Call Now
                         </button>
                     </div>
                 </div>
-                <div class="shadow p-3 mb-5 bg-white rounded mr-5" style="height: 170px; width: 200px;">
+                <div class="shadow p-3 mb-5 bg-white rounded mr-5 div-contact">
                     <div class="row">
                         <div class="col-4 ">
-                            <button class="btn rounded justify-content-center" style="width: 40px;height: 40px;background-color: #eef2ff;padding-left: 7px;">
-                                <span class="fa fa-envelope"
-                                    style="background-color: #eef2ff;color: #2a4ac8; font-size: x-large;"></span>
+                            <button class="btn rounded justify-content-center btn-class-1">
+                                <span class="fa fa-envelope icon-class-1"></span>
                             </button>
                         </div>
                         <div class="col-8">
                             <strong class="dark-blue-font">Message</strong>
-                            <p class="text-muted" style="font-size: x-small;font-weight: bold;">021.123.145.14 </p>
+                            <p class="text-muted font-xsmall-bold">021.123.145.14 </p>
                         </div>
                     </div>
                     <div class="row justify-content-center mt-3">
-                        <button class="btn rounded shadow-sm "
-                            style="width: 170px;height: 50px;background-color: #eef2ff;color: #2a4ac8; font-weight: bold;font-size: small;">
+                        <button class="btn rounded shadow-sm icon-blue font-small-bold"
+                            style="width: 170px;height: 50px;">
                             Message Now
                         </button>
                     </div>
@@ -612,13 +517,13 @@
             <div class="col-5 text-sm">
                 <div class="container text-center">
                     <small>Terms & Agreements Privacy Policy</small>
-                    
+
                 </div>
                 <div class="arrow-up"></div>
 
             </div>
             <div class="col-1">
-                
+
             </div>
 
         </div>
