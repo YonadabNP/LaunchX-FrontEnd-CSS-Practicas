@@ -1,0 +1,151 @@
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+  font-family: normalFont;
+  src: url(/assets/fonts/mplus-1c-regular.ttf);
+}
+
+.bg-footer {
+  background-color: #eef3ff;
+}
+
+.bg-vaccination-font {
+  color: #3c5ad0;
+}
+
+.dark-blue-font {
+  color: #1f3e72;
+}
+
+.gradient-header {
+  background: #ffffff;
+  background: linear-gradient(to right, #ffffff, #e7f3fc, #e9f1fc);
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+
+  border-bottom: 90px solid #e2e9f9;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+
+  border-top: 60px solid #f4f6fb;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+
+  border-left: 80px solid #f4f6fb;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+
+  border-right: 80px solid #f4f6fb;
+}
+
+.preparations-icon {
+  background-color: #eef2ff;
+  color: #2a4ac8;
+  font-size: larger;
+  width: 25px;
+  height: 25px;
+}
+
+.btn-class-1 {
+  width: 40px;
+  height: 40px;
+  background-color: #eef2ff;
+  padding-left: 7px;
+}
+
+.icon-class-1 {
+  background-color: #eef2ff;
+  color: #2a4ac8;
+  font-size: x-large;
+}
+
+.icon-schedule {
+  background-color: #eef2ff;
+  color: #2a4ac8;
+  font-size: large;
+}
+
+.icon-blue {
+  background-color: #eef2ff;
+  color: #2a4ac8;
+}
+
+.icon-blue-selected {
+  background-color: #2a4ac8;
+  color: #eef2ff;
+}
+
+.font-smaller {
+  font-size: smaller;
+}
+
+.font-medium-bold {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.font-small-bold {
+  font-weight: bold;
+  font-size: small;
+}
+
+.font-xsmall-bold {
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.div-schedule {
+  top: 30px;
+  left: 105px;
+  width: 800px;
+}
+
+.div-vaccine {
+  height: 250px;
+  width: 200px;
+}
+
+.btn-contact-1 {
+  width: 170px;
+  height: 50px;
+  background-color: #eef2ff;
+  color: #2a4ac8;
+  font-weight: bold;
+  font-size: small;
+}
+
+.div-contact {
+  height: 170px;
+  width: 200px;
+}
